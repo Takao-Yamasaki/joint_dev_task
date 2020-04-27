@@ -54,9 +54,10 @@ def q6
   numbers1 = [1, 2, 3, 4, 5]
 
   # 以下に回答を記載
-  numbers1.each.with_index do |number,i|
-    numbers1[i] = number * 10
-  end 
+  # numbers1.each.with_index do |number,i|
+  #   numbers1[i] = number * 10
+  # end
+  numbers1.map!{|num| num * 10} 
   p numbers1
 end
 
