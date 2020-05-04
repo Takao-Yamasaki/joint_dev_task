@@ -211,9 +211,9 @@ class UserQ18
 
   def introduce
     if @age <= 10
-      puts "はいさいまいど〜，ゆたぼんです！！！"
+      print "はいさいまいど〜，ゆたぼんです！！！"
     else
-      puts "こんにちは，あじーと申します。宜しくお願いいたします。"
+      print "こんにちは，あじーと申します。宜しくお願いいたします。"
     end
   end  
 end
@@ -229,7 +229,7 @@ end
 
 class Item
   # 以下を修正して下さい
-  attr_accessor :name
+  attr_reader :name
 
   def initialize(**params)
     @name = params[:name]
@@ -244,7 +244,7 @@ end
 
 class UserQ20
   # 以下に回答を記載
-  attr_accessor :name,:age
+  attr_reader :name,:age
   def initialize(name:,age:)
     @name = name
     @age = age
